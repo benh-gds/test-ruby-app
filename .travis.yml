@@ -1,1 +1,11 @@
 edge: true
+deploy:
+  provider: cloudfoundry
+  api: https://api.cloud.service.gov.uk
+  username: benjamin.henley@digital.cabinet-office.gov.uk
+  password:
+    secure: UgR3ltofMWSF6k3yCiiK+Q0QpG61yfJ+Vr+xZ9U/QrK2cuL5NfYKB6Qvkx31EdT2NjPY0k4y2hsDLqUiKeAKVTW1mYZ/aofJ75bKvEQ/i8gzMcOAmB1xwnx1TiJD2xebaudBUAr/xrY8Ju/yGB0UMtDUwTftx23bMOvwd3JQ3ZcEZhQXRUMXKgqj6eka4KiHpURjSjpgUiOOGwEGRaKBUeJjWn6fZhLQLtei7sn2O0w8pvdoZWdJQ6zhQtOGY4UyHIvICgBhrwOuIZt9+29mAaYcIafC8ngsZfFlpMiPgdqopexJN1yno+gA6lg5e/3yi2WL5+4SX6NXuaUxHryDw9oP696J4Gc1KhLpAPc9bCZeqTym6hp87HbaqYadDzQtUzaQwLACqBgowI9frVwI5k3QQQkZqWKPGve8575gz64CvROfhUqu2n0jKU+a2gH2pqyLaB2tz+PO565z/sd4Rg+3Nf8lzW+ezATgBwnLCgtulepvmwgSQL31nIGv3KKJeqcVH7gOhIqSrCbtQSJgslpyJFcKGTSPgSgCtBLrH0xnPLJrpQjAgQwNoNgWrumbgW+zrwsDSZcQxJVkk18i8MlHQhH1GWZnKTfdZUG4PWt7EycpC5vcjrcJpFfNFNRDkuhR/MytUU/8Ir2jTMaJ15qOx3lSyqwr5PL1/YA7Trs=
+  organization: paas-demo
+  space: sandbox
+  on:
+    repo: benh-gds/test-ruby-app

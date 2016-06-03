@@ -1,4 +1,7 @@
 edge: true
+language: ruby
+rvm:
+  - 2.3
 deploy:
   provider: cloudfoundry
   api: https://api.cloud.service.gov.uk

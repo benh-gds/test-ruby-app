@@ -2,6 +2,10 @@ edge: true
 language: ruby
 rvm:
   - 2.2
+services:
+  - postgresql
+before_script:
+  - psql -c 'create database test-ruby-postgres_test;' -U postgres
 deploy:
   provider: cloudfoundry
   api: https://api.cloud.service.gov.uk
